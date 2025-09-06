@@ -1,0 +1,124 @@
+/* App.css */
+
+/* 전체 배경과 폰트 */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+}
+
+/* 앱 중앙 배치 */
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding-top: 50px;
+}
+
+/* 할 일 컨테이너 */
+.todo-container {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 헤더 */
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.subtitle {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #777;
+}
+
+/* 입력 폼 */
+.input-form {
+  display: flex;
+  margin-top: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.todo-input:focus {
+  border-color: #007bff;
+}
+
+.add-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 0 5px 5px 0;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+/* 할 일 리스트 */
+.todo-list {
+  margin-top: 20px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #999;
+  font-size: 14px;
+}
+
+/* 할 일 아이템 */
+.todo-item {
+  display: flex;
+  align-items: center;
+  padding: 10px 5px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-checkBox input {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 16px;
+  color: #333;
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+/* 삭제 버튼 */
+.delete-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.delete-button:hover {
+  color: red;
+}
